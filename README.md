@@ -49,7 +49,7 @@ Une ouverture de section se présente sous la forme de:
     Contenu de la section
     </balise> // Fermeture de la section
 
-## Exemple et description
+### Exemple et description
       <!DOCTYPE html>  <!-- Declaration du type de document -->
       <html lang="fr"> <!-- le tag d'ouverture du document avec precision de la langue -->
       <head> <!-- L'element head contient les informations tel que le codage de caractère, la taille de la fenêtre d'affichage et le titre -->
