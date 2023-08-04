@@ -86,5 +86,9 @@ Utile uniquement pour des navigateurs moins récents.
       <head> <!-- L'element head contient les informations tel que le codage de caractère,
                   la taille de la fenêtre d'affichage et le titre -->
         <title> Titre affiché sur l'onglet </title>
-        <meta charset="UTF-8"> <!-- codage de caractères -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      </head>
+      </html>
         
