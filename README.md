@@ -31,8 +31,7 @@ Une fois fait, on peut accéder à notre page via localhost:4200
     cd <my-angular-app>
     npm install <library-name>
     
-### Librairies utiles
-#### Bootstrap
+### Bootstrap
   Bootstrap fournit une collection de fiche CSS pré-écrites et des composants graphiques adaptables plus digeste pour les développeurs.
 
       npm install bootstrap
