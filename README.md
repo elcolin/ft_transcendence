@@ -75,6 +75,7 @@ Il fournit les metadonnées du document tel que:
 
     <meta name="keywords" content="web development, HTML, CSS, JavaScript">
 **Compatibilité navigateur**
+
 Utile uniquement pour des navigateurs moins récents.
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
