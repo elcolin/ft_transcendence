@@ -19,8 +19,19 @@ ou
 
 ### Créer un nouveau projet Angular
   
-    ng new my-angular-app
-    cd my-angular-app
+    ng new <my-angular-app>
+    cd <my-angular-app>
     ng serve
 
 Une fois fait, on peut accéder à notre page via localhost:4200
+
+## Frontend
+### Comment installer une librairie?
+
+    cd <my-angular-app>
+    npm install <library-name>
+    
+### Librairies utiles
+#### JQuery
+  Simplifie la manipulation de fichier HTML (DOM): Recherche des éléments à l'aide d'un ID, des classes, tags... Gestion des évènements comme des clics, mouvements de souris ou une entrée clavier.
+  
