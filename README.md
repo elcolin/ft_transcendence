@@ -52,7 +52,7 @@ Une ouverture de section se présente sous la forme de:
 Certains tags n'ont pas besoin d'un tag de fermeture:
 
     <balise>
-#### <meta>
+#### meta
 
 Le tag meta ne nécessite pas de tag de fermeture. Sa variable name n'est pas arbitraire, à voir les valeurs ci-dessous.
 Il fournit les metadonnées du document tel que:
