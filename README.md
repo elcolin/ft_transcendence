@@ -49,9 +49,30 @@ Une ouverture de section se présente sous la forme de:
     Contenu de la section
     </balise> // Fermeture de la section
 
+Certains tags n'ont pas besoin d'un tag de fermeture:
+
+    <balise>
+#### <meta>
+
+Le tag meta ne nécessite pas de tag de fermeture. Sa variable name n'est pas arbitraire, à voir les valeurs ci-dessous.
+Il fournit les metadonnées du document tel que:
+
+**Codage des caractères:**
+    
+    <meta charset="UTF-8">
+**Paramètres de la fenêtre d'affichage**
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+**Description du document**
+
+    <meta name="description" content="This is a sample web page about XYZ.">
+
 ### Exemple et description
       <!DOCTYPE html>  <!-- Declaration du type de document -->
       <html lang="fr"> <!-- le tag d'ouverture du document avec precision de la langue -->
       <head> <!-- L'element head contient les informations tel que le codage de caractère,
                   la taille de la fenêtre d'affichage et le titre -->
         <title> Titre affiché sur l'onglet </title>
+        <meta charset="UTF-8"> <!-- codage de caractères -->
+        
