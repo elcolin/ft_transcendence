@@ -36,13 +36,12 @@ Une fois fait, on peut accéder à notre page via localhost:4200
   Bootstrap fournit une collection de fiche CSS pré-écrites et des composants graphiques adaptables plus digeste pour les développeurs.
 
       npm install bootstrap
-  Pour utiliser les fiches CSS, il suffit d'aller dans le fichier **angular.json** et aller trouver "styles":
+  Pour ajouter les styles CSS et les règles implémenter par Bootstrap, il suffit d'aller dans le fichier **angular.json** dans la section "styles":
   
       "styles": [
         "src/styles.css",
         "node_modules/bootstrap/dist/css/bootstrap.min.css"
         ],
-"node_modules/bootstrap/dist/css/bootstrap.min.css" -> Peut être remplacé par n'importe quelle fiche CSS.
 ## HTML
 ### Règles de synthaxe
 Une ouverture de section se présente sous la forme de:
