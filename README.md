@@ -68,6 +68,16 @@ Il fournit les metadonnées du document tel que:
 **Description du document**
 
     <meta name="description" content="This is a sample web page about XYZ.">
+**Auteur et Copyright**
+
+    <meta name="author" content="Prenom nom">
+**Tags de recherche**
+
+    <meta name="keywords" content="web development, HTML, CSS, JavaScript">
+**Compatibilité navigateur**
+Utile uniquement pour des navigateurs moins récents.
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 ### Exemple et description
       <!DOCTYPE html>  <!-- Declaration du type de document -->
