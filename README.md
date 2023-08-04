@@ -9,11 +9,11 @@ ou
 
     brew install node
   
-  NestJS CLI
+  NestJS CLI (framework backend)
   
     npm install -g @nestjs/cli
 
-  Angular CLI
+  Angular CLI (framework frontend)
   
     npm install -g @angular/cli
 
@@ -34,4 +34,7 @@ Une fois fait, on peut accéder à notre page via localhost:4200
 ### Librairies utiles
 #### JQuery
   Simplifie la manipulation de fichier HTML (DOM): Recherche des éléments à l'aide d'un ID, des classes, tags... Gestion des évènements comme des clics, mouvements de souris ou une entrée clavier.
-  
+
+      npm install jquery
+
+#### Bootstrap
