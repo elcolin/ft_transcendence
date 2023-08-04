@@ -83,8 +83,7 @@ Utile uniquement pour des navigateurs moins récents.
 ### Exemple et description
       <!DOCTYPE html>  <!-- Declaration du type de document -->
       <html lang="fr"> <!-- le tag d'ouverture du document avec precision de la langue -->
-      <head> <!-- L'element head contient les informations tel que le codage de caractère,
-                  la taille de la fenêtre d'affichage et le titre -->
+      <head> <!-- Contient les metadonnees et le titre -->
         <title> Titre affiché sur l'onglet </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
