@@ -34,8 +34,11 @@ Frontend réalisé avec Angular.
     
 ### Librairies utiles
 #### JQuery
-  Simplifie la manipulation de fichier HTML (DOM): Recherche des éléments à l'aide d'un ID, des classes, tags... Gestion des évènements comme des clics, mouvements de souris ou une entrée clavier.
+  JQuery simplifie la manipulation de fichier HTML (DOM): Recherche des éléments à l'aide d'un ID, des classes, tags... Gestion des évènements comme des clics, mouvements de souris ou une entrée clavier.
 
       npm install jquery
 
 #### Bootstrap
+  Bootstrap fournit une collection de fiche CSS pré-écrites et des composants graphiques adaptables plus digeste pour les développeurs.
+
+      npm install bootstrap
