@@ -41,3 +41,9 @@ Une fois fait, on peut accéder à notre page via localhost:4200
   Bootstrap fournit une collection de fiche CSS pré-écrites et des composants graphiques adaptables plus digeste pour les développeurs.
 
       npm install bootstrap
+## HTML
+  index.html
+      
+      <!DOCTYPE html>  <!-- Declaration du type de document -->
+      <html lang="fr"> <!-- le tag d'ouverture du document avec precision de la langue -->
+      <head> <!-- L'element head contient les informations tel que le codage de caractère s
