@@ -25,8 +25,7 @@ ou
 
 Une fois fait, on peut accéder à notre page via localhost:4200
 
-## Frontend
-Frontend réalisé avec Angular.
+## Librairies Javascript
 ### Comment installer une librairie?
 
     cd <my-angular-app>
