@@ -33,7 +33,7 @@ Une fois fait, on peut accéder à notre page via localhost:4200
     
 ### Librairies utiles
     #### JQuery // Angular apporte déjà les fonctionnalité ci-dessous, risque de conflit si JQuery est installé
-    JQuery simplifie la manipulation de fichier HTML (DOM): Recherche des éléments à l'aide d'un ID, des classes, tags... Gestion des      évènements comme des clics, mouvements de souris ou une entrée clavier.
+    JQuery simplifie la manipulation de fichier HTML (DOM): Recherche des éléments à l'aide d'un ID, des classes, tags... Gestion des évènements comme des clics, mouvements de souris ou une entrée clavier.
 
       npm install jquery
 
