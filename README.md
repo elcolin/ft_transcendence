@@ -43,7 +43,10 @@ Une fois fait, on peut accéder à notre page via localhost:4200
       npm install bootstrap
 ## HTML
   index.html
+
+  **<balise>** *Ouverture de la balise* Contenu **</balise>** *Fermeture de la balise*
       
       <!DOCTYPE html>  <!-- Declaration du type de document -->
       <html lang="fr"> <!-- le tag d'ouverture du document avec precision de la langue -->
-      <head> <!-- L'element head contient les informations tel que le codage de caractère s
+      <head> <!-- L'element head contient les informations tel que le codage de caractère, la taille de la fenêtre d'affichage et le titre -->
+        <title> Titre affiché sur l'onglet </title>
