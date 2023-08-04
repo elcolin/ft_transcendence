@@ -45,7 +45,7 @@ Une fois fait, on peut accéder à notre page via localhost:4200
   
       "styles": [
         "src/styles.css",
-        "node_modules/bootstrap/dist/css/bootstrap.min.css" 
+        "node_modules/bootstrap/dist/css/bootstrap.min.css" <!-- N'importe quelle fiche CSS de la librairie -->
         ],
 ## HTML
 ### Règles de synthaxe
