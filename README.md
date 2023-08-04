@@ -11,9 +11,7 @@ Ce project consiste à créer un site web pour participer à une compétition du
 ### Créer un nouveau projet Angular
   
   ng new my-angular-app
-
   cd my-angular-app
-
   ng serve
 
 Une fois fait, on peut accéder à notre page via localhost:4200
