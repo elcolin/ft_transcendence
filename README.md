@@ -4,7 +4,10 @@ Ce project consiste à créer un site web pour participer à une compétition du
 ## Prérequis
   Node Package Manager
   
-    brew install npm / brew install node
+    brew install npm
+ou
+
+    brew install node
   
   NestJS CLI
   
