@@ -166,4 +166,4 @@ Le contenu principal de la page, la plupart du temps **main** contient plusieurs
 
     <footer></footer>
 
-C'est ici après footer qu'on place le tag de fermeture *</body>*.
+C'est ici après footer qu'on place le tag de fermeture "*</body>*".
