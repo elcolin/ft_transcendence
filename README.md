@@ -143,14 +143,27 @@ Quelques valeurs communes et reconnues par les navigateurs:
 
 ##### disabled
 
-### Exemple et description
-      <!DOCTYPE html>  <!-- Declaration du type de document -->
-      <html lang="fr"> <!-- le tag d'ouverture du document avec precision de la langue -->
-      <head> <!-- Contient les metadonnees et le titre -->
-        <title> Titre affiché sur l'onglet </title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Fiche CSS pour la page -->
-      </head>
-      </html>
-        
+## body
+La section **body** contient le contenu visible de la page:
+
+    <body> 
+      <!--Contenu visible -->
+    </body>
+Il peut lui-même contenir les différentes sections ci-dessous.
+### header
+Contenu dans body, **header** contient l'en-tête de la page. Typiquement le logo du site, une barre de navigation et d'autres éléments introductifs.
+
+    <header>
+      <!-- L'en-tête -->
+    </header>
+### main
+Le contenu principal de la page, la plupart du temps **main** contient plusieurs sections.
+
+    <main> </main>
+
+### footer
+**footer** est le pied de page, il contient la plupart du temps les informations de copyright et autre.
+
+    <footer></footer>
+
+C'est ici après footer qu'on place le tag de fermeture *</body>*.
