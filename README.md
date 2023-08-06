@@ -91,6 +91,7 @@ Les attributs obligatoires de link sont:
 
     <link rel="relationship" href="path/to/your-ressource">
 href est l'URL de la ressource.
+
 L'attribut rel désigne la relation entre le document et la ressource pouvant être désigné par:
 
     <link rel="stylesheet" type="text/css" href="styles.css"> pour la feuille de style CSS
