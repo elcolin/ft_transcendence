@@ -118,7 +118,7 @@ L'attribut **rel** désigne la relation entre le document et la ressource pouvan
 
 ##### as
 Utiliser avec *rel="preload"*, **as** sert à spécifier le type de la ressource allant être pré-chargée au navigateur. Permettant une meilleure allocation et optimisation.
-Valeurs communes pour as:
+Quelques valeurs communes et reconnues par les navigateurs:
 
     "image": For image files (e.g., JPEG, PNG, GIF, etc.).
     "script": For JavaScript files.
