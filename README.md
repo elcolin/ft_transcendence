@@ -87,13 +87,18 @@ Codage des caractères:
     
 #### link
 L'élément link est utile pour établir une relation entre la page et des ressources externes, il ne nécessite pas de tag de fermeture.
+Les attributs obligatoires de link sont:
 
-    <link rel="relationship" type="MIME type" href="path/to/your-ressource">
+    <link rel="relationship" href="path/to/your-ressource">
+href est l'URL de la ressource.
 L'attribut rel désigne la relation entre le document et la ressource pouvant être désigné par:
 
-    "stylesheet" pour la feuille de style CSS
-    "icon" pour le favicon (l'icône de la page web)
-    "preload" 
+    <link rel="stylesheet" type="text/css" href="styles.css"> pour la feuille de style CSS
+    <link rel="icon" type="image/png" href="favicon.png"> pour le favicon (l'icône de la page web)
+    <link rel="preload" href="image.jpg" as="image"> sert à charger une ressource avant son utilisation
+    <link rel="canonical" href="https://www.example.com/page">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="rss-feed.xml">
+    <link rel="dns-prefetch" href="https://www.example.com">
 
 type sert à spécifier le MIME type (Multipurpose Internet Mail Extensions), il permet d'indiquer la nature et le format d'un document. On lui donne donc un identifiant de format de données tel que:
 
