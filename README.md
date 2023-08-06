@@ -1,4 +1,4 @@
-# ft_transcendence
+-# ft_transcendence
 Ce project consiste à créer un site web pour participer à une compétition du célèbre jeu Pong
 
 ## Prérequis
@@ -87,6 +87,10 @@ Attribut nécessitant un synthaxe spécifique dans content:
 Codage des caractères:
     
     <meta charset="UTF-8">
+### title
+Le titre qui sera affiché sur l'onglet, il s'écrit sous la forme de:
+
+    <title> Ceci est un titre </title>
     
 ### link
 L'élément link est utile pour établir une relation entre la page et des ressources externes, il ne nécessite pas de tag de fermeture.
