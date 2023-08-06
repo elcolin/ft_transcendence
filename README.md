@@ -52,7 +52,18 @@ Une ouverture de section se présente sous la forme de:
 Certains tags n'ont pas besoin d'un tag de fermeture:
 
     <balise>
-    
+Un fichier HTML débute toujours par:
+
+      <!DOCTYPE html>  <!-- Declaration du type de document -->
+      <html lang="fr"> <!-- le tag d'ouverture du document avec precision de la langue ("en" si anglais par exemple)-->
+### head
+La section head contient toutes les meta-informations du document (donc des informations à propos du document lui-même et non du contenu affiché à l'utilisateur).
+Elle se déclare comme ceci:
+
+    <head>
+    <!-- meta-données -->
+    </head> <!-- Fermeture de la section -->
+Et contiendra le titre/l'icône du document affiché sur l'onglet, le codage de caractères, les paramètres d'affichage, description et mot-clés (pour les moteurs de recherche), informations sur l'auteur/copyright ainsi que toutes les ressources externes: C'est ici que l'on va répertorier nos fiches CSS et les fichiers JS.
 #### meta
 
 Le tag meta ne nécessite pas de tag de fermeture. Sa variable name n'est pas arbitraire, à voir les valeurs ci-dessous.
