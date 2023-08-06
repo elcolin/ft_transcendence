@@ -92,10 +92,15 @@ Il fournit les meta-données du document tel que:
 Utile uniquement pour des navigateurs moins récents.
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-#### Feuille de style CSS
-##### link
-    <link rel="stylesheet" type="text/css" href="path/to/your-css-file.css">
-L'attribut rel désigne la relation entre le document et la ressource. Ici il s'agit de "stylesheet", la feuille de style.
+#### link
+L'élément link est utile pour établir une relation entre la page et des ressources externes, il ne nécessite pas de tag de fermeture.
+
+    <link rel="relationship" type="MIME type" href="path/to/your-ressource">
+L'attribut rel désigne la relation entre le document et la ressource pouvant être désigné par:
+
+    "stylesheet" pour la feuille de style CSS
+    "icon" pour le favicon (l'icône de la page web)
+    "preload" 
 
 type sert à spécifier le MIME type (Multipurpose Internet Mail Extensions), il permet d'indiquer la nature et le format d'un document. On lui donne donc un identifiant de format de données tel que:
 
