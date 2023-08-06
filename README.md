@@ -168,4 +168,42 @@ C'est ici après footer qu'on place le tag de fermeture de body.
         "src/styles.css",
         "node_modules/bootstrap/dist/css/bootstrap.min.css"
         ],
+### Les différentes classes de Bootstrap
 
+    <div class="options Bootstrap">
+    </div>
+Divers points intéressants:
+  *Le système de grille de Bootstrap sur un écran de taille medium se fait sur 12 colomnes.*
+
+#### Système de grille
+    container: Creates a fixed-width container for content.
+    container-fluid: Creates a full-width container that spans the entire viewport.
+    row: Used to create horizontal rows for organizing content into columns.
+    col-*: Defines the width of columns within a row.
+#### Typographie
+    text-*: Aligns text content (left, right, center, justify).
+    text-nowrap: Empêche le texte de passer à la ligne suivante.
+    text-truncate: Truncates text with an ellipsis when it overflows.
+#### Arrière plan et couleur
+    bg-*: Adds background color to elements (primary, secondary, success, danger, warning, info, light, dark, etc.).
+    text-*: Sets text color (primary, secondary, success, danger, warning, info, light, dark, etc.).
+#### Marge et remplissage
+    p-*: Adds padding (p-0, p-1, p-2, p-3, etc.).
+    m-*: Adds margin (m-0, m-1, m-2, m-3, etc.).
+#### Bordure et rayon de bordure
+    border: Adds a border to an element.
+    rounded: Adds rounded corners to an element.
+    rounded-*: Adds specific border radius (rounded-top, rounded-bottom, etc.).
+#### Réactivité
+    d-*: Controls element display for different screen sizes (d-none, d-block, d-md-none, etc.).
+    visible-* / invisible-*: Shows or hides elements based on screen sizes.
+#### Bar de navigation
+    navbar: Creates a navigation bar.
+    navbar-expand-*: Controls navbar expansion for different screen sizes.
+#### Bouton
+    btn: Styles a button.
+    btn-*: Adds styles for different button types (primary, secondary, success, danger, etc.).
+#### Formulaire
+    form-control: Styles form input fields.
+    form-check: Styles form checkbox and radio elements.
+    form-group: Groups form elements together.
