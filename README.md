@@ -79,7 +79,7 @@ Attribut ne nécessitant pas de synthaxe spéciale dans content:
     <meta name="author" content="Prenom nom"> Auteur et Copyright
     <meta name="keywords" content="web development, HTML, CSS, JavaScript"> Tags de recherche
 
-Attribut nécessitant un synthaxe spécifique dans content:
+Attribut nécessitant une synthaxe spécifique dans content:
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> Paramètres de la fenêtre d'affichage
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> Compatibilité navigateur, utile uniquement pour des navigateurs moins récents.
