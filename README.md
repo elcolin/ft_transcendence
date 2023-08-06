@@ -25,22 +25,6 @@ ou
 
 Une fois fait, on peut accéder à notre page via localhost:4200
 
-## Librairies Javascript
-### Comment installer une librairie?
-
-    cd <my-angular-app>
-    npm install <library-name>
-    
-### Bootstrap
-  Bootstrap fournit une collection de fiche CSS pré-écrites et des composants graphiques adaptables plus digeste pour les développeurs.
-
-      npm install bootstrap
-  Pour ajouter les styles CSS et les règles implémenter par Bootstrap, il suffit d'aller dans le fichier **angular.json** dans la section "styles":
-  
-      "styles": [
-        "src/styles.css",
-        "node_modules/bootstrap/dist/css/bootstrap.min.css"
-        ],
 # HTML
 ## Règles de synthaxe
 Une ouverture de section se présente sous la forme de:
@@ -168,4 +152,20 @@ Le contenu principal de la page, la plupart du temps **main** contient plusieurs
 
 C'est ici après footer qu'on place le tag de fermeture de body.
 
+## Librairies Javascript
+### Comment installer une librairie?
+
+    cd <my-angular-app>
+    npm install <library-name>
+    
+### Bootstrap
+  Bootstrap fournit une collection de fiche CSS pré-écrites et des composants graphiques adaptables plus digeste pour les développeurs.
+
+      npm install bootstrap
+  Pour ajouter les styles CSS et les règles implémenter par Bootstrap, il suffit d'aller dans le fichier **angular.json** dans la section "styles":
+  
+      "styles": [
+        "src/styles.css",
+        "node_modules/bootstrap/dist/css/bootstrap.min.css"
+        ],
 
