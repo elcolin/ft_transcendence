@@ -41,8 +41,8 @@ Une fois fait, on peut accéder à notre page via localhost:4200
         "src/styles.css",
         "node_modules/bootstrap/dist/css/bootstrap.min.css"
         ],
-## HTML
-### Règles de synthaxe
+# HTML
+## Règles de synthaxe
 Une ouverture de section se présente sous la forme de:
 
     <balise> //Ouverture de la section
@@ -56,7 +56,7 @@ Un fichier HTML débute toujours par:
 
       <!DOCTYPE html>  <!-- Declaration du type de document -->
       <html lang="fr"> <!-- le tag d'ouverture du document avec precision de la langue ("en" si anglais par exemple)-->
-### head
+## head
 La section head contient toutes les meta-informations du document (donc des informations à propos du document lui-même et non du contenu affiché à l'utilisateur).
 Elle se déclare comme ceci:
 
@@ -64,7 +64,7 @@ Elle se déclare comme ceci:
     <!-- meta-données -->
     </head> <!-- Fermeture de la section -->
 Et contiendra le titre/l'icône du document affiché sur l'onglet, le codage de caractères, les paramètres d'affichage, description et mot-clés (pour les moteurs de recherche), informations sur l'auteur/copyright ainsi que toutes les ressources externes: C'est ici que l'on va répertorier nos fiches CSS et les fichiers JS.
-#### metatags
+### metatags
     <meta>
     <meta name="-name-" content="-content-">
 
@@ -85,7 +85,7 @@ Codage des caractères:
     
     <meta charset="UTF-8">
     
-#### link
+### link
 L'élément link est utile pour établir une relation entre la page et des ressources externes, il ne nécessite pas de tag de fermeture.
 Les attributs obligatoires de link sont:
 
