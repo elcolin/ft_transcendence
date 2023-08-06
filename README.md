@@ -152,13 +152,13 @@ Le contenu principal de la page, la plupart du temps **main** contient plusieurs
 
 C'est ici après footer qu'on place le tag de fermeture de body.
 
-## Librairies Javascript
-### Comment installer une librairie?
+# Librairies Javascript
+## Comment installer une librairie?
 
     cd <my-angular-app>
     npm install <library-name>
     
-### Bootstrap
+## Bootstrap
   Bootstrap fournit une collection de fiche CSS pré-écrites et des composants graphiques adaptables plus digeste pour les développeurs.
 
       npm install bootstrap
