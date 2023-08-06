@@ -157,7 +157,7 @@ Pour permettre l'utilisation de scripts JS (ou le superset Typescript), on utili
 
     <script>
     </script>
-On le situe dans **head**, si l'on souhaite l'exécution du script avant le chargement de la page. Sinon ou le place dans **body**, le script sera alors lancé après le chargement de la page, surtout utilisé pour gérer les interactions utilisateurs.
+On le situe dans **head**, si l'on souhaite l'exécution du script avant le chargement de la page. Sinon il est placé dans **body**, le script sera alors lancé après le chargement de la page, surtout utilisé pour gérer les interactions utilisateurs.
 
 Plusieurs utilisations existent:
 ### Inline
