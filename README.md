@@ -64,10 +64,12 @@ Elle se déclare comme ceci:
     <!-- meta-données -->
     </head> <!-- Fermeture de la section -->
 Et contiendra le titre/l'icône du document affiché sur l'onglet, le codage de caractères, les paramètres d'affichage, description et mot-clés (pour les moteurs de recherche), informations sur l'auteur/copyright ainsi que toutes les ressources externes: C'est ici que l'on va répertorier nos fiches CSS et les fichiers JS.
-#### meta
+#### metatags
+    <meta>
+    <meta name="-name-" content="-content-">
 
 Le tag meta ne nécessite pas de tag de fermeture. Sa variable name n'est pas arbitraire, à voir les valeurs ci-dessous.
-Il fournit les metadonnées du document tel que:
+Il fournit les meta-données du document tel que:
 
 **Codage des caractères:**
     
@@ -90,6 +92,19 @@ Il fournit les metadonnées du document tel que:
 Utile uniquement pour des navigateurs moins récents.
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+#### Feuille de style CSS
+##### link
+    <link rel="stylesheet" type="text/css" href="path/to/your-css-file.css">
+L'attribut rel désigne la relation entre le document et la ressource. Ici il s'agit de "stylesheet", la feuille de style.
+
+type sert à spécifier le MIME type (Multipurpose Internet Mail Extensions), il permet d'indiquer la nature et le format d'un document. On lui donne donc un identifiant de format de données tel que:
+
+    Text files may have the MIME type text/plain.
+    HTML files have the MIME type text/html.
+    CSS files have the MIME type text/css.
+    JavaScript files have the MIME type application/javascript.
+    Images in JPEG format have the MIME type image/jpeg.
+    Images in PNG format have the MIME type image/png.
 
 ### Exemple et description
       <!DOCTYPE html>  <!-- Declaration du type de document -->
