@@ -68,30 +68,18 @@ Et contiendra le titre/l'icône du document affiché sur l'onglet, le codage de 
     <meta>
     <meta name="-name-" content="-content-">
 
-Le tag meta ne nécessite pas de tag de fermeture. Sa variable name n'est pas arbitraire, à voir les valeurs ci-dessous.
-Il fournit les meta-données du document tel que:
+Le tag meta ne nécessite pas de tag de fermeture. Il fournit les meta-données du document. Sa variable name n'est pas arbitraire, à voir les valeurs ci-dessous:
 
-**Codage des caractères:**
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> Paramètres de la fenêtre d'affichage
+    <meta name="description" content="This is a sample web page about XYZ."> Description du document
+    <meta name="author" content="Prenom nom"> Auteur et Copyright
+    <meta name="keywords" content="web development, HTML, CSS, JavaScript"> Tags de recherche
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> Compatibilité navigateur, utile uniquement pour des navigateurs moins récents.
+
+Codage des caractères:
     
     <meta charset="UTF-8">
-**Paramètres de la fenêtre d'affichage**
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-**Description du document**
-
-    <meta name="description" content="This is a sample web page about XYZ.">
-**Auteur et Copyright**
-
-    <meta name="author" content="Prenom nom">
-**Tags de recherche**
-
-    <meta name="keywords" content="web development, HTML, CSS, JavaScript">
-**Compatibilité navigateur**
-
-Utile uniquement pour des navigateurs moins récents.
-
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
 #### link
 L'élément link est utile pour établir une relation entre la page et des ressources externes, il ne nécessite pas de tag de fermeture.
 
