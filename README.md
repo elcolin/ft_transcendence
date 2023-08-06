@@ -152,6 +152,25 @@ Le contenu principal de la page, la plupart du temps **main** contient plusieurs
 
 C'est ici après footer qu'on place le tag de fermeture de body.
 
+## Scripts Javascript
+Pour permettre l'utilisation de scripts JS (ou le superset Typescript), on utilise la balise suivante:
+
+    <script>
+    </script>
+On le situe dans **head**, si l'on souhaite l'exécution du script avant le chargement de la page. Sinon ou le place dans **body**, le script sera alors lancé après le chargement de la page, surtout utilisé pour gérer les interactions utilisateurs.
+
+Plusieurs utilisations existent:
+### Inline
+On peut directement écrire le code dans le html:
+
+    <script>
+      alert("Hello, World!");
+    </script>
+### External
+En utilisant un fichier extérieur au html (le plus utilisé):
+
+    <script src="path/to/script.js"></script>
+
 # Librairies Javascript
 ## Comment installer une librairie?
 
