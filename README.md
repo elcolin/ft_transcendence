@@ -103,6 +103,7 @@ L'attribut **rel** désigne la relation entre le document et la ressource pouvan
 
 #### Attributs optionnels de link
 
+##### type
 type sert à spécifier le MIME type (Multipurpose Internet Mail Extensions), il permet d'indiquer la nature et le format d'un document. On lui donne donc un identifiant de format de données tel que:
 
     Text files may have the MIME type text/plain.
@@ -111,6 +112,16 @@ type sert à spécifier le MIME type (Multipurpose Internet Mail Extensions), il
     JavaScript files have the MIME type application/javascript.
     Images in JPEG format have the MIME type image/jpeg.
     Images in PNG format have the MIME type image/png.
+
+##### as
+
+##### crossorigin
+
+##### integrity
+
+##### media
+
+##### disabled
 
 ### Exemple et description
       <!DOCTYPE html>  <!-- Declaration du type de document -->
