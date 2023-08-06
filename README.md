@@ -54,8 +54,11 @@ Certains tags n'ont pas besoin d'un tag de fermeture:
     <balise>
 Un fichier HTML débute toujours par:
 
-      <!DOCTYPE html>  <!-- Declaration du type de document -->
-      <html lang="fr"> <!-- le tag d'ouverture du document avec precision de la langue ("en" si anglais par exemple)-->
+    <!DOCTYPE html>  <!-- Declaration du type de document -->
+    <html lang="fr"> <!-- le tag d'ouverture du document avec precision de la langue ("en" si anglais par exemple)-->
+et se termine avec
+
+    </html>
 ## head
 La section head contient toutes les meta-informations du document (donc des informations à propos du document lui-même et non du contenu affiché à l'utilisateur).
 Elle se déclare comme ceci:
