@@ -96,9 +96,9 @@ L'attribut rel désigne la relation entre le document et la ressource pouvant ê
     <link rel="stylesheet" type="text/css" href="styles.css"> pour la feuille de style CSS
     <link rel="icon" type="image/png" href="favicon.png"> pour le favicon (l'icône de la page web)
     <link rel="preload" href="image.jpg" as="image"> sert à charger une ressource avant son utilisation
-    <link rel="canonical" href="https://www.example.com/page">
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="rss-feed.xml">
-    <link rel="dns-prefetch" href="https://www.example.com">
+    <link rel="canonical" href="https://www.example.com/page"> permet de désigner l'exemplaire original d'une page web (pour éviter la duplication de contenu)
+    <link rel="alternate" href="https://www.example.com/es/" hreflang="es" /> désigne une page alternative, une version espagnol ici
+    <link rel="dns-prefetch" href="https://www.example.com"> permet au navigateur de faire une requête DNS à l'avance, lui permettant d'y accéder plus rapidement et fluidifier l'expérience utilisateur
 
 type sert à spécifier le MIME type (Multipurpose Internet Mail Extensions), il permet d'indiquer la nature et le format d'un document. On lui donne donc un identifiant de format de données tel que:
 
