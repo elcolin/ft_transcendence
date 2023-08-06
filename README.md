@@ -117,7 +117,7 @@ L'attribut **rel** désigne la relation entre le document et la ressource pouvan
     Images in PNG format have the MIME type image/png.
 
 ##### as
-Utiliser avec *rel="preload"*, pour spécifier le type de la ressource allant être pré-chargée.
+Utiliser avec *rel="preload"*, **as** sert à spécifier le type de la ressource allant être pré-chargée au navigateur. Permettant une meilleure allocation et optimisation.
 Valeurs communes pour as:
 
     "image": For image files (e.g., JPEG, PNG, GIF, etc.).
