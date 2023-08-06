@@ -87,7 +87,7 @@ Codage des caractères:
     
 ### link
 L'élément link est utile pour établir une relation entre la page et des ressources externes, il ne nécessite pas de tag de fermeture.
-Les attributs obligatoires de link sont:
+#### Attributs obligatoires de link
 
     <link rel="relationship" href="path/to/your-ressource">
 href est l'URL de la ressource.
@@ -100,6 +100,8 @@ L'attribut rel désigne la relation entre le document et la ressource pouvant ê
     <link rel="canonical" href="https://www.example.com/page"> permet de désigner l'exemplaire original d'une page web (pour éviter la duplication de contenu)
     <link rel="alternate" href="https://www.example.com/es/" hreflang="es" /> désigne une page alternative, une version espagnol ici
     <link rel="dns-prefetch" href="https://www.example.com"> permet au navigateur de faire une requête DNS à l'avance, lui permettant d'accéder plus rapidement à cette page web et fluidifier l'expérience utilisateur
+
+#### Attributs optionnels de link
 
 type sert à spécifier le MIME type (Multipurpose Internet Mail Extensions), il permet d'indiquer la nature et le format d'un document. On lui donne donc un identifiant de format de données tel que:
 
