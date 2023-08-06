@@ -117,6 +117,19 @@ L'attribut **rel** désigne la relation entre le document et la ressource pouvan
     Images in PNG format have the MIME type image/png.
 
 ##### as
+Utiliser avec *rel="preload"*, pour spécifier le type de la ressource allant être pré-chargée.
+Valeurs communes pour as:
+
+    "image": For image files (e.g., JPEG, PNG, GIF, etc.).
+    "script": For JavaScript files.
+    "style": For stylesheets (CSS files).
+    "font": For font files (e.g., WOFF, WOFF2, TTF, etc.).
+    "audio": For audio files (e.g., MP3, WAV, etc.).
+    "video": For video files (e.g., MP4, WebM, etc.).
+    "fetch": For data-fetching resources (e.g., JSON, XML, etc.).
+    "document": For HTML documents.
+    "worker": For web worker scripts.
+    "manifest": For web app manifest files.
 
 ##### crossorigin
 
