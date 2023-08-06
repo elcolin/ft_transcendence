@@ -226,3 +226,5 @@ Divers points intéressants:
     form-control: Styles form input fields.
     form-check: Styles form checkbox and radio elements.
     form-group: Groups form elements together.
+
+# Typescript
