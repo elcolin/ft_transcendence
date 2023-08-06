@@ -90,9 +90,9 @@ L'élément link est utile pour établir une relation entre la page et des resso
 #### Attributs obligatoires de link
 
     <link rel="relationship" href="path/to/your-ressource">
-href est l'URL de la ressource.
+**href** est l'URL de la ressource.
 
-L'attribut rel désigne la relation entre le document et la ressource pouvant être désigné par:
+L'attribut **rel** désigne la relation entre le document et la ressource pouvant être désigné par:
 
     <link rel="stylesheet" type="text/css" href="styles.css"> pour la feuille de style CSS
     <link rel="icon" type="image/png" href="favicon.png"> pour le favicon (l'icône de la page web)
