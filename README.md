@@ -127,7 +127,10 @@ Quelques valeurs communes et reconnues par les navigateurs:
 
 ##### disabled
 
-## body
+## Éléments de blocs
+Les éléments de blocs ne peuvent apparaître qu'au sein de **body**. Ils occupent tout l'espace horizontal de l'élément parent et un espace vertical égal à la hauteur du contenu.
+
+### body
 La section **body** contient le contenu visible de la page:
 
     <body> 
@@ -152,6 +155,8 @@ Le contenu principal de la page, la plupart du temps **main** contient plusieurs
 
 C'est ici après footer qu'on place le tag de fermeture de body.
 
+
+
 ## Scripts Javascript
 Pour permettre l'utilisation de scripts JS (ou le superset Typescript), on utilise la balise suivante:
 
@@ -170,6 +175,13 @@ On peut directement écrire le code dans le html:
 En utilisant un fichier extérieur au html (le plus utilisé):
 
     <script src="path/to/script.js"></script>
+
+### Javascript manquant
+Si l'utilisateur n'a pas activé Javascript il est possible d'utiliser **noscript** pour afficher du contenu alternatif:
+
+    <noscript>
+      <p>Please enable JavaScript to view this website.</p>
+    </noscript>
 
 # Librairies Javascript
 ## Comment installer une librairie?
