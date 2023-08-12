@@ -155,7 +155,12 @@ Le contenu principal de la page, la plupart du temps **main** contient plusieurs
 
 C'est ici après footer qu'on place le tag de fermeture de body.
 
+    <div>, <p>, <h1>, <ul>, <li>, <section>, <article>, <footer>.
 
+## Éléments de lignes
+Les éléments de lignes contrairement aux éléments de blocs n'occupe que la largeur qui leur est nécessaire. Ils s'insèrent dans le flux du contenu.
+
+    <span>, <a>, <em>, <strong>, <br>, <img>, <input>
 
 ## Scripts Javascript
 Pour permettre l'utilisation de scripts JS (ou le superset Typescript), on utilise la balise suivante:
