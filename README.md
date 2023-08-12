@@ -162,7 +162,7 @@ Les éléments de lignes contrairement aux éléments de blocs n'occupe que la l
 
     <span>, <a>, <em>, <strong>, <br>, <img>, <input>
 
-## Scripts Javascript
+### Scripts Javascript
 Pour permettre l'utilisation de scripts JS (ou le superset Typescript), on utilise la balise suivante:
 
     <script>
@@ -170,18 +170,18 @@ Pour permettre l'utilisation de scripts JS (ou le superset Typescript), on utili
 On le situe dans **head**, si l'on souhaite l'exécution du script avant le chargement de la page. Sinon il est placé dans **body**, le script sera alors lancé après le chargement de la page, surtout utilisé pour gérer les interactions utilisateurs.
 
 Plusieurs utilisations existent:
-### Inline
+#### Inline
 On peut directement écrire le code dans le html:
 
     <script>
       alert("Hello, World!");
     </script>
-### External
+#### External
 En utilisant un fichier extérieur au html (le plus utilisé):
 
     <script src="path/to/script.js"></script>
 
-### Javascript manquant
+#### Javascript manquant
 Si l'utilisateur n'a pas activé Javascript il est possible d'utiliser **noscript** pour afficher du contenu alternatif:
 
     <noscript>
