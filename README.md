@@ -194,6 +194,18 @@ Si l'utilisateur n'a pas activé Javascript il est possible d'utiliser **noscrip
       <p>Please enable JavaScript to view this website.</p>
     </noscript>
 
+### Interpolation
+Pour user de l'interpolation, c'est à dire, lier une valeur de notre composant Typescript à notre HTML, on utilise la synthaxe suivante:
+
+    {{  value }}
+
+  elle devra être présente dans un fichier Typescript, déclarée sous la forme de:
+
+    export class AppComponent {
+      title = 'testranscendence';
+      result = 'test'
+    }
+
 # Librairies Javascript
 ## Comment installer une librairie?
 
