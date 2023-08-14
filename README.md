@@ -181,7 +181,7 @@ En utilisant un fichier extérieur au html (le plus utilisé):
 
     <script src="path/to/script.js"></script>
 
-Se faisant il faut aussi modifier dans angular.json la section "architect" > "build" > "scripts":
+Se faisant il faut aussi modifier dans angular.json la section **"architect" > "build" > "scripts"**:
 
     "scripts": [
               "path/to/script.js"
