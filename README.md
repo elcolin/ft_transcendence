@@ -162,7 +162,7 @@ Les éléments de lignes contrairement aux éléments de blocs n'occupe que la l
 
     <span>, <a>, <em>, <strong>, <br>, <img>, <input>
 
-### Scripts Javascript
+## Scripts Javascript
 Pour permettre l'utilisation de scripts JS (ou le superset Typescript), on utilise la balise suivante:
 
     <script>
