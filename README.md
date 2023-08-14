@@ -203,8 +203,9 @@ Pour user de l'interpolation, c'est à dire, lier une valeur de notre composant 
 
     export class AppComponent {
       title = 'testranscendence';
-      result = 'test'
+      value = 'test';
     }
+  Elle nécessite d'être une propriété d'une classe de composant (component class).
 
 # Librairies Javascript
 ## Comment installer une librairie?
