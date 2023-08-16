@@ -269,3 +269,14 @@ Ce sont des paternes de conception utiles à la modification du comportement d'u
 Dans Angular, il n'est pas possible de créer de nouveaux décorateurs, ils nécessitent donc d'être importés:
 
     import { Component } from '@angular/core';
+Leur usage peut se faire comme suivi:
+
+    @Component({
+      selector: 'app-root',
+      templateUrl: './app.component.html',
+      styleUrls: ['./app.component.css']
+    })
+**@Component** *Le décorateur*
+**selector** *permet de créer un tag HTML personnalisé pour une balise, "app-root" dans notre exemple.*
+**templateURL** *Le fichier html (obligatoirement html) externe qui va être utilisé comme modèle dans nos balise.*
+**styleUrls** *Les fiches de style CSS.*
