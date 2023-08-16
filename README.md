@@ -264,3 +264,8 @@ Divers points intéressants:
     form-group: Groups form elements together.
 
 # Typescript
+## Les décorateurs
+Ce sont des paternes de conception utiles à la modification du comportement d'une fonction ou d'un objet. Ils permettent d'attribuer de nouvelles métadonnées, des styles et autres.
+Dans Angular, il n'est pas possible de créer de nouveaux décorateurs, ils nécessitent donc d'être importés:
+
+    import { Component } from '@angular/core';
