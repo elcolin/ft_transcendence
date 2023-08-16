@@ -280,6 +280,6 @@ Leur usage peut se faire comme suivi:
 
 **selector** *permet de créer un tag HTML personnalisé pour une balise, "app-root" dans notre exemple.*
 
-**templateURL** *Le fichier html (obligatoirement html) externe qui va être utilisé comme modèle dans nos balise.*
+**templateURL** *Le fichier html (obligatoirement html) externe qui va être utilisé comme modèle dans nos balises.*
 
 **styleUrls** *Les fiches de style CSS.*
