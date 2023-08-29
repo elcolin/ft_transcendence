@@ -29,9 +29,17 @@
 ## Installation
 
 ```bash
-$ npm install
+$ npm install @nestjs/cli
 ```
+## Database
 
+```bash
+# start
+$ npm run db:dev:up
+
+# restart
+$ npm run db:dev:restart
+```
 ## Running the app
 
 ```bash
@@ -44,6 +52,7 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+
 
 ## Test
 
