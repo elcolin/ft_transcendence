@@ -29,7 +29,7 @@
 ## Installation
 
 ```bash
-$ npm install @nestjs/cli
+$ npm install 
 ```
 ## Database
 
