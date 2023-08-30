@@ -127,7 +127,10 @@ Quelques valeurs communes et reconnues par les navigateurs:
 
 ##### disabled
 
-## body
+## Éléments de blocs
+Les éléments de blocs ne peuvent apparaître qu'au sein de **body**. Ils occupent tout l'espace horizontal de l'élément parent et un espace vertical égal à la hauteur du contenu.
+
+### body
 La section **body** contient le contenu visible de la page:
 
     <body> 
@@ -152,6 +155,13 @@ Le contenu principal de la page, la plupart du temps **main** contient plusieurs
 
 C'est ici après footer qu'on place le tag de fermeture de body.
 
+    <div>, <p>, <h1>, <ul>, <li>, <section>, <article>, <footer>.
+
+## Éléments de lignes
+Les éléments de lignes contrairement aux éléments de blocs n'occupe que la largeur qui leur est nécessaire. Ils s'insèrent dans le flux du contenu.
+
+    <span>, <a>, <em>, <strong>, <br>, <img>, <input>
+
 ## Scripts Javascript
 Pour permettre l'utilisation de scripts JS (ou le superset Typescript), on utilise la balise suivante:
 
@@ -160,16 +170,42 @@ Pour permettre l'utilisation de scripts JS (ou le superset Typescript), on utili
 On le situe dans **head**, si l'on souhaite l'exécution du script avant le chargement de la page. Sinon il est placé dans **body**, le script sera alors lancé après le chargement de la page, surtout utilisé pour gérer les interactions utilisateurs.
 
 Plusieurs utilisations existent:
-### Inline
+#### Inline
 On peut directement écrire le code dans le html:
 
     <script>
       alert("Hello, World!");
     </script>
-### External
+#### External
 En utilisant un fichier extérieur au html (le plus utilisé):
 
     <script src="path/to/script.js"></script>
+
+Se faisant il faut aussi modifier dans angular.json la section **"architect" > "build" > "scripts"**:
+
+    "scripts": [
+              "path/to/script.js"
+            ]
+
+#### Javascript manquant
+Si l'utilisateur n'a pas activé Javascript il est possible d'utiliser **noscript** pour afficher du contenu alternatif:
+
+    <noscript>
+      <p>Please enable JavaScript to view this website.</p>
+    </noscript>
+
+### Interpolation
+Pour user de l'interpolation, c'est à dire, lier une valeur de notre composant Typescript à notre HTML, on utilise la synthaxe suivante:
+
+    {{  value }}
+
+  elle devra être présente dans un fichier Typescript, déclarée sous la forme de:
+
+    export class AppComponent {
+      title = 'testranscendence';
+      value = 'test';
+    }
+  Elle nécessite d'être une propriété d'une classe de composant (component class).
 
 # Librairies Javascript
 ## Comment installer une librairie?
@@ -228,3 +264,24 @@ Divers points intéressants:
     form-group: Groups form elements together.
 
 # Typescript
+## Les décorateurs
+Ce sont des paternes de conception utiles à la modification du comportement d'une fonction ou d'un objet. Ils permettent d'attribuer de nouvelles métadonnées, des styles et autres.
+Dans Angular, il n'est pas possible de créer de nouveaux décorateurs, ils nécessitent donc d'être importés:
+
+    import { Component } from '@angular/core';
+Leur usage peut se faire comme suivi:
+
+    @Component({
+      selector: 'app-root',
+      templateUrl: './app.component.html',
+      styleUrls: ['./app.component.css']
+    })
+**@Component** *Le décorateur.*
+
+**selector** *permet de créer un tag HTML personnalisé pour une balise, "app-root" dans notre exemple.*
+
+**templateURL** *Le fichier html (obligatoirement html) externe qui va être utilisé comme modèle dans nos balises.*
+
+**styleUrls** *Les fiches de style CSS.*
+
+
