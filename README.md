@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ft_transcendence
 Ce project consiste à créer un site web pour participer à une compétition du célèbre jeu Pong
 
@@ -285,3 +286,6 @@ Leur usage peut se faire comme suivi:
 **styleUrls** *Les fiches de style CSS.*
 
 
+=======
+# Ft_transcendence
+>>>>>>> ecolin
