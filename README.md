@@ -283,8 +283,3 @@ Leur usage peut se faire comme suivi:
 **templateURL** *Le fichier html (obligatoirement html) externe qui va être utilisé comme modèle dans nos balises.*
 
 **styleUrls** *Les fiches de style CSS.*
-
-
-=======
-# Ft_transcendence
->>>>>>> ecolin
