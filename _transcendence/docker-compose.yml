@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  angular:
+    container_name: angular
+    networks:
+      - transcendence
+    build:
+      context: ./angular
+      dockerfile: Dockerfile
+    volumes:
+      - angular:/var/www/angular
+    restart: unless-stopped
+
+volumes:
+  angular:
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: './angular/volume'
+
+networks:
+  transcendence:
+    driver: bridge
