@@ -6,7 +6,7 @@ services:
     networks:
       - transcendence
     build:
-      context: ./angular
+      context: ./angular/app
       dockerfile: Dockerfile
     volumes:
       - angular:/var/www/angular
