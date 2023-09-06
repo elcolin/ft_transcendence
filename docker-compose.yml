@@ -6,7 +6,7 @@ services:
     networks:
       - transcendence
     build:
-      context: ./angular
+      context: ./src/angular
       dockerfile: Dockerfile
     ports:
       - "4200:4200"
