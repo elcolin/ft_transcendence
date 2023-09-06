@@ -1,14 +1,11 @@
 all: reload
 
-volume:
-	mkdir -p ./volume/angular/
+start: fclean reload
 stop:
 	docker-compose -f docker-compose.yml down
-clean:
+clean: stop
 	docker system prune -af
-fclean: stop clean
-	rm -rf ./volume/angular/
-	docker volume rm -f transcendence_angular
+fclean: clean
 
 reload:
 	docker-compose -f docker-compose.yml up -d --build
