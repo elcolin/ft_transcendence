@@ -10,17 +10,17 @@ services:
       dockerfile: Dockerfile
     ports:
       - "4200:4200"
-#    volumes:
-#      - angular:/var/www/angular
+    volumes:
+      - angular:/var/www/angular
     restart: unless-stopped
 
-#volumes:
-#  angular:
-#    driver: local
-#    driver_opts:
-#      type: 'none'
-#      o: 'bind'
-#      device: './volume/angular'
+volumes:
+  angular:
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: './volume/angular'
 
 networks:
   transcendence:
