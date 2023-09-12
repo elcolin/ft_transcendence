@@ -31,6 +31,8 @@ Une fois fait, on peut accéder à notre page via localhost:4200
 Ensuite, on peut l'inclure comme ceci dans le html:
 
     <app-face-snap></app-face-snap>
+## Creer un bouton
+    <button (click)="onAddSnap()">Oh Snap!</button>
 
 # HTML
 ## Règles de synthaxe
