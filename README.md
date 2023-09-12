@@ -17,11 +17,13 @@ ou
   
     npm install -g @angular/cli
 
-### Créer un nouveau projet Angular
+# Angular
+## Créer un nouveau projet Angular
   
     ng new <my-angular-app>
     cd <my-angular-app>
     ng serve
+
 
 Une fois fait, on peut accéder à notre page via localhost:4200
 
