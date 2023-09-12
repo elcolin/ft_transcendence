@@ -206,6 +206,9 @@ Pour user de l'interpolation, c'est à dire, lier une valeur de notre composant 
 
     {{  value }}
 
+    <img src="{{imageUrl}}">
+    <img [src]="imageUrl">
+
   elle devra être présente dans un fichier Typescript, déclarée sous la forme de:
 
     export class AppComponent {
