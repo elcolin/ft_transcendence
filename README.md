@@ -23,9 +23,14 @@ ou
     ng new <my-angular-app>
     cd <my-angular-app>
     ng serve
-
-
 Une fois fait, on peut accéder à notre page via localhost:4200
+
+## Creer un nouveau composant
+
+    ng generate component face-snap
+Ensuite, on peut l'inclure comme ceci dans le html:
+
+    <app-face-snap></app-face-snap>
 
 # HTML
 ## Règles de synthaxe
