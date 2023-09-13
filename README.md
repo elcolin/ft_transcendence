@@ -28,11 +28,46 @@ Une fois fait, on peut accéder à notre page via localhost:4200
 ## Creer un nouveau composant
 
     ng generate component face-snap
+
+### Les décorateurs
+Ce sont des paternes de conception utiles à la modification du comportement d'une fonction ou d'un objet. Ils permettent d'attribuer de nouvelles métadonnées, des styles et autres.
+Dans Angular, il n'est pas possible de créer de nouveaux décorateurs, ils nécessitent donc d'être importés:
+
+    import { Component } from '@angular/core';
+Leur usage peut se faire comme suivi:
+
+    @Component({
+      selector: 'app-root',
+      templateUrl: './app.component.html',
+      styleUrls: ['./app.component.css']
+    })
+  
+**@Component** *Le décorateur.*
+
+**selector** *permet de créer un tag HTML personnalisé pour une balise, "app-root" dans notre exemple.*
 Ensuite, on peut l'inclure comme ceci dans le html:
 
     <app-face-snap></app-face-snap>
 ## Creer un bouton
     <button (click)="onAddSnap()">Oh Snap!</button>
+
+## Creer une classe
+
+    export class FaceSnap {
+      title: string;
+      description: string;
+      createdDate: Date;
+      snaps: number;
+      imageUrl: string;
+  
+      constructor(title: string, description: string, imageUrl: string, createdDate: Date, snaps: number) {
+        this.title = title;
+        this.description = description;
+        this.imageUrl = imageUrl;
+        this.createdDate = createdDate;
+        this.snaps = snaps;
+        }
+    }
 
 # HTML
 ## Règles de synthaxe
