@@ -70,7 +70,9 @@ Ensuite, on peut l'inclure comme ceci dans le html:
     }
 
 ## Lier une methode a un evenement
-Pour lier une méthode à un événement d'un élément du template, mettez l'événement entre parenthèses  ()  et passez la méthode en argument ; ex. : (click)="onClickButton()"
+Pour lier une méthode à un événement d'un élément du template, mettez l'événement entre parenthèses  ()  et passez la méthode en argument ; 
+    
+    ex. : (click)="onClickButton()"
 
 # HTML
 ## Règles de synthaxe
