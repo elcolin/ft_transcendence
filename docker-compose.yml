@@ -12,7 +12,21 @@ services:
       - "4200:4200"
     volumes:
       - angular:/var/www/angular
-    restart: unless-stopped
+    depends_on:
+      - nestjs
+    restart: on-failure
+
+  nestjs:
+    container_name: nestjs
+    networks:
+      - transcendence
+    build:
+      context: ./src/nestjs
+      dockerfile: Dockerfile
+    volumes:
+      - nestjs:/var/www/nestjs
+    restart: on-failure
+
 
 volumes:
   angular:
@@ -21,6 +35,13 @@ volumes:
       type: 'none'
       o: 'bind'
       device: './volume/angular'
+  
+  nestjs:
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: './volume/nestjs'
 
 networks:
   transcendence:
