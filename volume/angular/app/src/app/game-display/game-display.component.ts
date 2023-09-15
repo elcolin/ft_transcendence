@@ -13,4 +13,10 @@ export class GameDisplayComponent {
 	currentDate!: Date;
 	width!: number;
 	height!: number;
+	screen!: string;
+
+	onPlayDisplay(){
+		// this.gameDisplay.screen = '../../assets/background_explosion.jpg';
+		this.gameDisplay.width++;
+	}
 }

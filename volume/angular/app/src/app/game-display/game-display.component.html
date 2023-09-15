@@ -1,1 +1,10 @@
-<p>{{gameDisplay.playerName}}</p>
+<h2>{{gameDisplay.playerName}}</h2>
+<p>Current date: {{gameDisplay.currentDate}}</p>
+<div class ="gameWindow">
+	
+</div>
+<img *ngIf="gameDisplay.screen" [src]="gameDisplay.screen">
+<p>
+	<button (click)="onPlayDisplay()">PLAY</button>
+	{{gameDisplay.width}}
+</p>
