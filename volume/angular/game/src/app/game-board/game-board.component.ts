@@ -13,11 +13,11 @@ export class GameBoardComponent implements OnInit{
 	ngOnInit(): void {
 		this.paddleLeft = {
 			bottom: 50,
-			left: true
+			currentUser: true
 		}
 		this.paddleRight = {
 			bottom: 50,
-			left: false
+			currentUser: false
 		};
 	}
 }
