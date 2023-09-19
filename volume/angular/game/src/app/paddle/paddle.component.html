@@ -1,1 +1,4 @@
-<div class="paddle"></div>
+<div class="paddle" *ngIf="paddle.left" [ngStyle]="{bottom: paddle.bottom + '%',
+left: 0}"></div>
+<div class="paddle" *ngIf="paddle.left == false" [ngStyle]="{bottom: paddle.bottom + '%',
+right: 0}"></div>

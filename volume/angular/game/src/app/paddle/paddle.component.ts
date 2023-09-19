@@ -1,10 +1,12 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Paddle } from '../models/paddle.model';
 
 @Component({
   selector: 'app-paddle',
   templateUrl: './paddle.component.html',
   styleUrls: ['./paddle.component.scss']
 })
-export class PaddleComponent {
-	@Input() left: number = 0;
+export class PaddleComponent{
+
+	@Input() paddle!: Paddle;
 }
