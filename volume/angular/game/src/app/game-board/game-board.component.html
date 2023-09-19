@@ -1,5 +1,10 @@
 <div class="game-board">
 	<div class="center-line"></div>
 	<app-paddle [paddle]="paddleLeft"></app-paddle>
+	<app-ball [ball]="ball"></app-ball>
 	<app-paddle [paddle]="paddleRight"></app-paddle>
 </div>
+<button (click)="MoreSpeed()"> More Speed!</button>
+<button (click)="ResetSpeed()"> Reset Speed </button>
+<p> Current Speed: {{paddleLeft.speed}} <br> 
+Ball radius: {{ball.radius}} A Adapter!! </p>

@@ -12,9 +12,19 @@ export class PaddleComponent{
 	@HostListener('document:keydown', ['$event'])
 	handleKeyboardEvent(event: KeyboardEvent)
 	{
-		if(this.paddle.currentUser && event.key == 'ArrowDown')
-			this.paddle.bottom--;
-		if(this.paddle.currentUser && event.key == 'ArrowUp')
-			this.paddle.bottom++;
+		if(this.paddle.currentUser && this.paddle.bottom > 10 && (event.key == 'ArrowDown' || event.key == 's'))
+		{
+			if (this.paddle.bottom - this.paddle.speed < 10)
+				this.paddle.bottom = 10;
+			else
+				this.paddle.bottom -= this.paddle.speed;
+		}
+		if(this.paddle.currentUser && this.paddle.bottom < 90 && (event.key == 'ArrowUp' || event.key == 'w'))
+		{
+			if (this.paddle.bottom + this.paddle.speed > 90)
+				this.paddle.bottom = 90;
+			else
+				this.paddle.bottom += this.paddle.speed;
+		}
 	}
 }

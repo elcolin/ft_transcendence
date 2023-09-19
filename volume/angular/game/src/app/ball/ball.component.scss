@@ -1,0 +1,10 @@
+.ball {
+	width: 20px; /* Adjust the width and height to create the desired circle size */
+	height: 20px; /* Adjust the width and height to create the desired circle size */
+	background-color: yellow;
+	border-radius: 50%; /* This creates the circular shape */
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  }

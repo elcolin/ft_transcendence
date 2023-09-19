@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Ball } from '../models/ball.model';
 
 @Component({
   selector: 'app-ball',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./ball.component.scss']
 })
 export class BallComponent {
-
+	@Input() ball!: Ball;
 }
