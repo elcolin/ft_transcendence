@@ -1,10 +1,20 @@
+<style>
+		canvas{
+			background-color: black;
+		}
+</style>
 <div class="game-board">
 	<div class="center-line"></div>
 	<app-paddle [paddle]="paddleLeft"></app-paddle>
 	<app-ball [ball]="ball"></app-ball>
 	<app-paddle [paddle]="paddleRight"></app-paddle>
 </div>
-<button (click)="MoreSpeed()"> More Speed!</button>
-<button (click)="ResetSpeed()"> Reset Speed </button>
-<p> Current Speed: {{paddleLeft.speed}} <br> 
-Ball radius: {{ball.radius}} A Adapter!! </p>
+<button (click)="moreSpeed()"> More Speed!</button>
+<button (click)="reset()"> Reset </button>
+<button (click)="stopGame()"> Stop Game</button>
+<button (click)="startGame()"> Start</button>
+<p> Current Speed: {{paddleLeft.speed}} <br>
+Ball : {{ball.posx}}, {{ball.posy}} <br>
+Ball angle: {{ball.angle}}</p>
+
+<canvas id="gameCanvas" width="500" height="320"></canvas>

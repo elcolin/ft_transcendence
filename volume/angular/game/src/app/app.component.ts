@@ -8,10 +8,4 @@ import { Paddle } from './models/paddle.model';
 })
 export class AppComponent{
 
-	// paddleLeft!: Paddle;
-	// paddleRight!: Paddle;
-	// ngOnInit(): void {
-	// 	this.paddleLeft = new Paddle(true, 50);
-	// 	this.paddleRight = new Paddle(false, 50);
-	// }
 }

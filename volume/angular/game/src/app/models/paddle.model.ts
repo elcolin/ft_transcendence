@@ -1,7 +1,7 @@
 export class Paddle{
 	speed: number = 1;
 	
-	constructor(public bottom: number, public currentUser: boolean)
+	constructor(public posy: number, public currentUser: boolean)
 	{
 	}
 }
