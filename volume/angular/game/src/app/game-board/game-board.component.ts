@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild} from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef} from '@angular/core';
 import { Paddle } from '../models/paddle.model';
 import { Ball } from '../models/ball.model';
 
@@ -14,7 +14,6 @@ export class GameBoardComponent implements OnInit{
 	paddleRight!: Paddle;
 	private isGameRunning: boolean = true;
 	ball!: Ball;
-
 	ngOnInit(): void {
 		this.paddleLeft = {
 			posy: 50,
