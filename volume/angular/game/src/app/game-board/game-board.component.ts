@@ -10,23 +10,35 @@ import { Ball } from '../models/ball.model';
 
 export class GameBoardComponent implements OnInit{
 
+	width: number = 500;
+	height: number = 320;
+	@ViewChild('canvas', {static: true}) gameCanvas!: ElementRef;
+	context!: CanvasRenderingContext2D;
 	paddleLeft!: Paddle;
 	paddleRight!: Paddle;
 	private isGameRunning: boolean = true;
 	ball!: Ball;
+
 	ngOnInit(): void {
-		this.paddleLeft = {
-			posy: 50,
-			currentUser: true,
-			speed: 1
-		}
-		this.paddleRight = {
-			posy: 50,
-			currentUser: false,
-			speed: 1
-		};
-		this.ball = new Ball(50, 50, 90)
-		
+		const canvas: HTMLCanvasElement = this.gameCanvas.nativeElement;
+		const ctx = canvas.getContext('2d');
+		if (!ctx)
+			return;
+		this.context = ctx;
+		this.context?.fillRect(0,0 , this.width, this.height);
+		this.paddleLeft = new Paddle(30, true, this.context);
+		// this.paddleRight = new Paddle(50, false, this.context);
+		this.ball = new Ball(100, 50, 90, this.context)
+		this.gameLoop = this.gameLoop.bind(this);
+		requestAnimationFrame(this.gameLoop);
+	}
+	draw()
+	{
+		this.context.clearRect(0, 0, this.width, this.height);
+		this.context.fillStyle = 'black';
+		this.context?.fillRect(0,0 , this.width, this.height);
+		this.paddleLeft.draw();
+		this.ball.draw();
 	}
 
 	moreSpeed() {
@@ -35,12 +47,13 @@ export class GameBoardComponent implements OnInit{
 	}
 
 	reset() {
-		this.paddleLeft.speed = 1;
-		this.paddleRight.speed = 1;
+		this.stopGame();
 		this.paddleLeft.posy = 50;
-		this.paddleRight.posy = 50;
-		this.ball.posx = 50;
+		this.ball.posx = 100;
 		this.ball.posy = 50;
+		this.ball.angle = 90;
+		this.draw();
+		
 	}
 
 	startGame() {
@@ -54,6 +67,11 @@ export class GameBoardComponent implements OnInit{
 
 	gameLoop()
 	{
-
+		if(!this.isGameRunning)
+			return;
+		// this.ball.updatePosition();
+		this.draw()
+		this.ball.updatePosition();
+		requestAnimationFrame(this.gameLoop);
 	}
 }

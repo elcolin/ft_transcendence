@@ -1,4 +1,4 @@
-import { Component, Input, HostListener } from '@angular/core';
+import { Component, Input, HostListener, OnInit } from '@angular/core';
 import { Paddle } from '../models/paddle.model';
 
 @Component({
@@ -6,9 +6,13 @@ import { Paddle } from '../models/paddle.model';
   templateUrl: './paddle.component.html',
   styleUrls: ['./paddle.component.scss']
 })
-export class PaddleComponent{
+export class PaddleComponent implements OnInit{
 	@Input() paddle!: Paddle;
 
+	ngOnInit(): void {
+		this.paddle.context.fillStyle = 'red';
+		this.paddle.context.fillRect(5, this.paddle.posy, 10, 20);
+	}
 	@HostListener('document:keydown', ['$event'])
 	handleKeyboardEvent(event: KeyboardEvent)
 	{
@@ -19,11 +23,11 @@ export class PaddleComponent{
 			else
 				this.paddle.posy -= this.paddle.speed;
 		}
-		if(this.paddle.currentUser && this.paddle.posy < 90 && (event.key == 'ArrowUp' || event.key == 'w'))
+		if(this.paddle.currentUser && this.paddle.posy < 300 && (event.key == 'ArrowUp' || event.key == 'w'))
 		{
-			if (this.paddle.posy + this.paddle.speed > 90)
-				this.paddle.posy = 90;
-			else
+			// if (this.paddle.posy + this.paddle.speed > 300)
+			// 	this.paddle.posy = 90;
+			// else
 				this.paddle.posy += this.paddle.speed;
 		}
 	}
