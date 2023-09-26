@@ -17,13 +17,8 @@ export class PaddleComponent implements OnInit{
 	{
 		this.paddle.gameBoard.startGame();
 		if(this.paddle.currentUser && this.paddle.posy > this.paddle.height/2 && (event.key == 'ArrowDown' || event.key == 's'))
-		{
-			if (this.paddle.posy - this.paddle.speed < 10)
-				this.paddle.posy = 10;
-			else
-				this.paddle.posy -= this.paddle.speed;
-		}
-		if(this.paddle.currentUser && this.paddle.posy < 640 && (event.key == 'ArrowUp' || event.key == 'w'))
 			this.paddle.posy += this.paddle.speed;
+		if(this.paddle.currentUser && this.paddle.posy < 640 && (event.key == 'ArrowUp' || event.key == 'w'))
+			this.paddle.posy -= this.paddle.speed;
 	}
 }

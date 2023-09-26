@@ -1,7 +1,7 @@
 import { GameBoardComponent } from "../game-board/game-board.component";
 
 export class Paddle{
-	speed: number = 1;
+	speed: number = 50;
 	height: number = 100;
 	width: number = 25;
 	posx!: number;
@@ -11,7 +11,7 @@ export class Paddle{
 		if (!currentUser)
 			this.posx = 975;
 		else
-			this.posx = 5;
+			this.posx = 0;
 	}
 
 	draw(){

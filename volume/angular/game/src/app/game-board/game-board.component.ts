@@ -28,7 +28,7 @@ export class GameBoardComponent implements OnInit{
 		this.context?.fillRect(0,0 , this.width, this.height);
 		this.paddleLeft = new Paddle(true, this.context, this);
 		this.paddleRight = new Paddle(false, this.context, this);
-		this.ball = new Ball(90, this.context)
+		this.ball = new Ball(156, this.context, this);
 		this.gameLoop = this.gameLoop.bind(this);
 		requestAnimationFrame(this.gameLoop);
 	}
@@ -53,7 +53,7 @@ export class GameBoardComponent implements OnInit{
 		this.paddleRight.posy = this.height / 2;
 		this.ball.posx = this.width / 2;
 		this.ball.posy = this.height / 2;
-		this.ball.angle = 180;
+		this.ball.angle = 156;
 		this.draw();
 		
 	}
