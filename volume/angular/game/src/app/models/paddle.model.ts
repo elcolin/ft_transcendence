@@ -1,11 +1,23 @@
+import { GameBoardComponent } from "../game-board/game-board.component";
+
 export class Paddle{
 	speed: number = 1;
-	constructor(public posy: number, public currentUser: boolean, public context: CanvasRenderingContext2D)
+	height: number = 100;
+	width: number = 25;
+	posx!: number;
+	posy: number = 320;
+	constructor(public currentUser: boolean, public context: CanvasRenderingContext2D, public gameBoard: GameBoardComponent)
 	{
+		if (!currentUser)
+			this.posx = 975;
+		else
+			this.posx = 5;
 	}
 
 	draw(){
 		this.context.fillStyle = 'red';
-		this.context.fillRect(5, this.posy, 15, 20);
+		if(!this.currentUser)
+			this.context.fillRect(this.posx, this.posy, this.width, this.height);
+		this.context.fillRect(this.posx, this.posy, this.width, this.height);
 	}
 }
