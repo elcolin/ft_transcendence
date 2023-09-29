@@ -6,6 +6,7 @@ export class Paddle{
 	width: number = 25;
 	posx!: number;
 	posy!: number;
+	score: number = 0;
 	constructor(public currentUser: boolean, public context: CanvasRenderingContext2D, public gameBoard: GameBoardComponent)
 	{
 		if (!currentUser)
@@ -25,5 +26,14 @@ export class Paddle{
 	{
 		this.speed = 60;
 		this.posy = this.gameBoard.height / 2;
+	}
+
+	updateScore()
+	{
+		this.score++;
+		if (this.currentUser)
+			console.log("Left: " + this.score + "\n");
+		else
+			console.log("Right: " + this.score + "\n");
 	}
 }

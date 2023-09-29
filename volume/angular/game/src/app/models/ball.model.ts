@@ -29,9 +29,13 @@ export class Ball{
 		}
 		else {
 			if (hx <= this.radius || hx >= this.gameBoard.width - this.radius)
+			{
+				if (hx <= this.radius)
+					this.gameBoard.paddleRight.updateScore();
+				else
+					this.gameBoard.paddleLeft.updateScore();
 				this.reset();
-			// if (hx <= this.radius || hx >= this.gameBoard.width - this.radius)
-				// this.angle = (180 - this.angle) % 360;
+			}
 			if (hy <= this.radius || hy >= this.gameBoard.height - this.radius)
 				this.angle = (-this.angle) % 360;
 	  	}
@@ -49,7 +53,7 @@ export class Ball{
 
 	reset()
 	{
-		this.speed = 12;
+		this.speed = 15;
 		this.posx = this.gameBoard.width / 2;
 		this.posy = this.gameBoard.height / 2;
 		this.angle = Math.random() * 360;
@@ -70,8 +74,7 @@ export class Ball{
 		const maxAngle = 45;   // Angle at the top of the paddle
 		const relativePosition = ballY / paddleHeight;
 		const newAngle = minAngle + (maxAngle - minAngle) * relativePosition;
-	  
-		console.log(newAngle + '\n');
+	
 		return newAngle;
 	}
 }
