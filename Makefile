@@ -10,6 +10,7 @@ clean: stop
 
 fclean: clean
 	docker volume rm -f transcendence_angular
+	docker volume rm -f transcendence_nestjs
 
 reload:
 	docker-compose -f docker-compose.yml up -d --build

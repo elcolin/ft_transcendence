@@ -23,6 +23,9 @@ services:
     build:
       context: ./src/nestjs
       dockerfile: Dockerfile
+    ports:
+      - "3333:3333"
+      - "3000:3000"
     volumes:
       - nestjs:/var/www/nestjs
     restart: on-failure
